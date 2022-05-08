@@ -32,5 +32,4 @@ export function getPutSignedUrl( key: string ): string {
     Key: key,
     Expires: signedUrlExpireSeconds,
   });
-
 }
