@@ -1,0 +1,18 @@
+version: "3"
+services:
+  udagram-proxy:
+    build:
+      context: udagram-proxy
+    image: arthur28/udagram-proxy
+  udagram-api-user:
+    build:
+      context: ../udagram-api-user
+    image: arthur28/udagram-api-user
+  udagram-api-feed:
+    build:
+      context: ../udagram-api-feed
+    image: arthur28/udagram-api-feed
+  udagram-frontend:
+    build:
+      context: ../udagram-frontend
+    image: arthur28/udagram-frontend
