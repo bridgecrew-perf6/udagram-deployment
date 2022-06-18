@@ -14,5 +14,5 @@ services:
     image: arthur28/udagram-api-feed
   udagram-frontend:
     build:
-      context: ../udagram-frontend
+      context: ../udagram-front
     image: arthur28/udagram-frontend
