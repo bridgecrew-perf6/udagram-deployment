@@ -2,7 +2,7 @@ version: "3"
 services:
   udagram-proxy:
     build:
-      context: udagram-proxy
+      context: proxy
     image: arthur28/udagram-proxy
   udagram-api-user:
     build:
