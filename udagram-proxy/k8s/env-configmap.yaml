@@ -3,7 +3,7 @@ kind: ConfigMap
 data:
   AWS_BUCKET: test-505528928291-dev-wc
   AWS_PROFILE: default
-  AWS_REGION: eu-east-2
+  AWS_REGION: us-east-1
   JWT_SECRET: hello
   POSTGRES_DB: postgres
   POSTGRES_HOST: database-505528928291.cuhrjvbxjfvz.us-east-1.rds.amazonaws.com
