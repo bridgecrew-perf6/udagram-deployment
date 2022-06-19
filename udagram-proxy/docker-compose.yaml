@@ -11,30 +11,30 @@ services:
   udagram-api-user:
     image: arthur28/udagram-api-user
     environment:
-      POSTGRES_USERNAME: root
-      POSTGRES_PASSWORD: arthur93
-      POSTGRES_DB: postgres
-      POSTGRES_HOST: database-505528928291.cuhrjvbxjfvz.us-east-1.rds.amazonaws.com
-      AWS_REGION: us-east-2
-      AWS_PROFILE: default
-      AWS_BUCKET: test-505528928291-dev-wc
-      JWT_SECRET: hello
+      POSTGRES_USERNAME: $POSTGRES_USERNAME
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+      POSTGRES_DB: $POSTGRES_DB
+      POSTGRES_HOST: $POSTGRES_HOST
+      AWS_REGION: $AWS_REGION
+      AWS_PROFILE: $AWS_PROFILE
+      AWS_BUCKET: $AWS_BUCKET
+      JWT_SECRET: $JWT_SECRET
       URL: "http://localhost:8100"
   udagram-api-feed:
     image: arthur28/udagram-api-feed
     volumes:
       - $HOME/.aws:/root/.aws
     environment:
-      POSTGRES_USERNAME: root
-      POSTGRES_PASSWORD: arthur93
-      POSTGRES_DB: postgres
-      POSTGRES_HOST: database-505528928291.cuhrjvbxjfvz.us-east-1.rds.amazonaws.com
-      AWS_REGION: us-east-2
-      AWS_PROFILE: default
-      AWS_BUCKET: test-505528928291-dev-wc
-      JWT_SECRET: hello
+      POSTGRES_USERNAME: $POSTGRES_USERNAME
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+      POSTGRES_DB: $POSTGRES_DB
+      POSTGRES_HOST: $POSTGRES_HOST
+      AWS_REGION: $AWS_REGION
+      AWS_PROFILE: $AWS_PROFILE
+      AWS_BUCKET: $AWS_BUCKET
+      JWT_SECRET: $JWT_SECRET
       URL: "http://localhost:8100"
-  udagram-frontend:
-    image: arthur28/udagram-frontend
+  udagram-front:
+    image: arthur28/udagram-front
     ports:
       - "8100:80"

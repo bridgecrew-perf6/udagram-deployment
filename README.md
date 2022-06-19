@@ -38,7 +38,7 @@ Create an AWS S3 bucket. Set the config values for environment variables prefixe
 * You can visit `http://localhost:8080/api/v0/feed` in your web browser to verify that the application is running. You should see a JSON payload. Feel free to play around with Postman to test the API's.
 
 ### Frontend App
-* To download all the package dependencies, run the command from the directory `udagram-frontend/`:
+* To download all the package dependencies, run the command from the directory `udagram-front/`:
     ```bash
     npm install .
     ```

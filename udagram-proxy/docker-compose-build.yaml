@@ -12,7 +12,7 @@ services:
     build:
       context: ../udagram-api-feed
     image: arthur28/udagram-api-feed
-  udagram-frontend:
+  udagram-front:
     build:
       context: ../udagram-front
-    image: arthur28/udagram-frontend
+    image: arthur28/udagram-front
