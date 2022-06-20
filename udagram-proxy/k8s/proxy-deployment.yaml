@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
@@ -6,10 +6,13 @@ metadata:
   name: udagram-proxy
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      name: udagram-proxy
   template:
     metadata:
       labels:
-        service: udagram-proxy
+        name: udagram-proxy
     spec:
       containers:
       - image: arthur28/udagram-proxy
