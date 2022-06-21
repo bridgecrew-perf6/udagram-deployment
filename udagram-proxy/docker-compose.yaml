@@ -1,4 +1,4 @@
-version: "5"
+version: '3.0'
 services:
   udagram-proxy:
       image: arthur28/udagram-proxy
